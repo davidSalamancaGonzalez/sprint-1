@@ -1,0 +1,326 @@
+body {
+    max-width: 1200px;
+    min-width: 330px;
+}
+
+.gridlayout {
+    background-image: url('images/header.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    margin-bottom: 10px;
+
+}
+
+.headercontainer {
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+.headdiv.arriba {
+    display: grid;
+    grid-template-columns: 0.4fr auto auto;
+
+    animation-name: logoMovement;
+    animation-duration: 3s;
+}
+
+.smallheader {
+    margin: 20px;
+    animation: logoMovement;
+    animation-duration: 3s;
+}
+
+.rightheader {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.headdiv {
+    display: grid;
+    grid-template-rows: 6fr 1fr;
+}
+
+.midheader {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    place-items: center;
+
+}
+
+.largeheader {
+    display: grid;
+    align-items: center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgba(255, 140, 0, 0.688);
+    margin: 11% 5% 0 5%;
+    height: 9rem;
+    font-family: 'Gentium Book Plus', serif;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-align: center;
+
+    animation-name: colorChange;
+    animation-duration: 3s;
+
+}
+
+.headerTitle {
+
+    animation-name: titleStart;
+    animation-duration: 4s;
+
+}
+
+a {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1rem;
+}
+
+a:hover {
+    color: #ee7463;
+}
+
+.fa-brands {
+    color: rgba(0, 0, 0, 0.6);
+    margin-left: 5px;
+
+}
+
+.fa-brands:hover {
+    color: #6394ee;
+    cursor: pointer;
+
+}
+
+.nav-boton {
+    background: transparent;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    border-color: #ee7463;
+    color: #ee7463;
+    border-radius: 2px;
+    display: none;
+    padding: 2px;
+}
+
+.nav-boton:hover {
+    background-color: #ee7463;
+    color: white;
+    border-color: transparent;
+}
+
+.flexcontainer {
+    width: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
+
+
+    animation-name: mainAparece;
+    animation-duration: 4s;
+}
+
+.containercard {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: rgba(128, 128, 128, 0.203);
+    padding: 10px;
+    gap: 10px;
+}
+
+.rightaside {
+    background-color: rgba(128, 128, 128, 0.203);
+    padding: 10px;
+    text-align: center;
+}
+
+.card {
+    min-width: auto;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: rgb(255, 255, 255);
+    font-size: 1rem;
+}
+
+.textPhoto {
+    color: blanchedalmond;
+    margin-left: 10px;
+    margin-top: -30px;
+    font-size: 1rem;
+}
+
+.imagecard {
+    width: 100%;
+    height: auto;
+}
+
+.cardtitle {
+    background-color: #ee7463;
+    color: rgba(0, 0, 0, 0.757);
+    padding: 1rem 0.3rem 0.1rem;
+    margin-top: 5px;
+
+
+}
+
+.cardtext {
+    margin-top: 0px;
+    padding: 5px;
+    column-count: 2;
+}
+
+.cardlink {
+    margin: 5px 0px;
+    font-size: 0.6rem;
+}
+
+.footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.059);
+    padding: 2px;
+    margin: 10px 10px;
+}
+
+.cardundertext {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+
+}
+
+.footertext {
+    margin: 10px;
+}
+
+@media (max-width: 874px) {
+
+
+
+    .flexcontainer {
+        width: 100%;
+    }
+
+    .containercard {
+        grid-template-columns: 1fr 1fr;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: auto;
+    }
+
+    .rightaside {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .cardtext {
+        column-count: 1;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .headdiv.arriba {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        justify-content: center;
+        row-gap: 10px;
+        margin-bottom: 6rem;
+    }
+
+    .midheader {
+        margin-top: -1.5rem;
+        display: grid;
+        grid-template-columns: auto;
+
+    }
+
+    .smallheader {
+        margin-top: -0.2rem;
+    }
+
+    .largeheader {
+        font-size: 0.8rem;
+    }
+
+    .rightheader { 
+        display: flex;
+        margin: 1rem 0rem 0rem 0rem;
+        order: -1;
+    }
+
+    .fa-brands {
+        color: #ee7463;
+    }
+
+    .nav-boton {
+        margin-top: 0px;
+        display: grid;
+        width: auto;
+    }
+
+    .dissapear {
+        display: none;
+    }
+
+    a {
+        margin: 5px 20px;
+    }
+
+    .card {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        justify-self: center;
+    }
+}
+
+@keyframes titleStart { 
+
+    0% {
+        opacity: 0%;
+        color: transparent;
+    }
+
+    100% {
+        opacity: 100%;
+        
+    }
+}
+
+@keyframes logoMovement {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        height: 0rem;
+    }
+}
+
+@keyframes mainAparece {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+} 

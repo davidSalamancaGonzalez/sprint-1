@@ -1,0 +1,138 @@
+.gridlayout {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.headercontainer {
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+}
+
+.headdiv.arriba {
+    background: #27394e;
+    margin-bottom: 0px;
+}
+
+.headdiv {
+    margin: 10px 10px;
+    background: #f0763a;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.smallheader {
+    margin: 10px;
+    height: 10px;
+    background-color: #ea584b;
+    flex-grow: 1;
+}
+
+.midheader {
+    background-color: #ea584b;
+    height: 10px;
+    flex-grow: 5;
+
+}
+
+.largeheader {
+    margin: 10px;
+    flex-grow: 1;
+    background-color: #ffcc5e;
+    height: 10px;
+}
+
+.maincontainer {
+    display: flex;
+    background-color: black;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footercontainer {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.maindivleft {
+    background-color: #44465e;
+    flex-grow: 4;
+    margin: 10px 5px 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.maindivright {
+    background-color: #f94c47;
+    flex-grow: 1;
+    margin: 10px 10px 10px 5px;
+    flex-flow: wrap;
+    align-items: center;
+    align-content: space-between;
+}
+
+.rightdiv {
+    background: #ffe380;
+    height: 10px;
+    margin: 10px 10px -5px 10px;
+}
+
+.leftdiv {
+    background: #1664a4;
+    height: 10px;
+    width: 47%;
+    margin: 10px 10px 0px 10px;
+    flex: auto;
+}
+
+.largemain {
+    background: #6399bb;
+    height: 10px;
+    margin: 10px 10px;
+    width: 50%;
+    align-self: center;
+    flex: auto;
+}
+
+.divbottom {
+    background: #e4a434;
+    height: 10px;
+    margin: 10px;
+    width: 100%;
+}
+
+@media (max-width: 874px) {
+
+    .maincontainer {
+        display: flex;
+        background-color: yellow;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .leftdiv {
+        width: 100%;
+    }
+
+    .maindivright {
+        margin: 0px 10px 10px 10px;
+    }
+ 
+    .rightdiv {
+        margin: 10px;
+    }
+
+    .maindivleft {
+        margin: 10px;
+    }
+}
+
+

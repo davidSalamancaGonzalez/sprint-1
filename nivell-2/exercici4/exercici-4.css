@@ -1,0 +1,175 @@
+.gridlayout {
+    max-width: 1200px;
+    min-width: 330px;
+    background-image: url('images/header.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    margin: 20px;
+}
+
+.headercontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.headdiv.arriba {
+    display: flex;
+    align-items: center;
+}
+
+.smallheader {
+    margin: 40px 20px;
+}
+
+.rightheader {
+    margin-right: 2%;
+}
+
+.midheader {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    flex-grow: 5;
+}
+
+.largeheader {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgba(255, 140, 0, 0.688);
+    margin: 9% 5% 0 5%;
+    height: 8rem;
+    font-family: 'Gentium Book Plus', serif;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-align: center;
+   
+}
+
+a {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+a:hover {
+    color:  #ee7463;
+}
+
+.fa-brands {
+    margin-left: 1rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.fa-brands:hover {
+    color: rgba(255, 140, 0, 0.688);
+    cursor: pointer;    
+}
+
+.nav-boton {
+    background:transparent;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    border-color:  #ee7463;
+    color: #ee7463;
+    border-radius: 2px;
+    display: none;
+    padding: 2px;
+}
+
+.nav-boton:hover {
+    background-color:  #ee7463;
+    color: white;
+    border-color: transparent;
+}
+
+
+@media (max-width: 874px) {
+
+    .largeheader {
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .headdiv.arriba {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .smallheader {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;      
+    }
+
+    .midheader {
+        width: 100%;
+        margin: 5% auto;  
+    }
+
+    .rightheader {
+        display: flex;
+        margin-bottom: 10%;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .headdiv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .midheader {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+        margin-bottom: 4.5rem;      
+    }
+
+    .smallheader {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;  
+    }
+
+    .largeheader {
+        margin: 15% 0% 0% 0%;
+        font-size: 0.8rem;
+        padding: 5px;  
+    }
+
+    .rightheader {
+        display: flex;
+        margin-bottom: 0px;
+        order: -1;
+    }
+
+    .fa-brands {
+        color: #ee7463;
+        margin-right: 5px;
+    }
+   
+    .nav-boton {
+        margin-top: 0px;
+        display: block;
+        width: 4rem;  
+    }
+
+    .dissapear {
+        display: none;
+    }
+
+    a{
+        margin: 5px 20px ;
+    }
+    
+}
